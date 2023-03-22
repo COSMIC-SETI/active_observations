@@ -1,0 +1,61 @@
+common:
+  xengine_subband_map:
+    cosmic-gpu-2.0: [512, 544]
+    cosmic-gpu-2.1: [480, 512]
+    cosmic-gpu-3.0: [544, 576]
+    cosmic-gpu-3.1: [448, 480]
+    cosmic-gpu-4.0: [576, 608]
+    cosmic-gpu-4.1: [416, 448]
+    cosmic-gpu-5.0: [608, 640]
+    cosmic-gpu-5.1: [384, 416]
+    cosmic-gpu-6.0: [640, 672]
+    cosmic-gpu-6.1: [352, 384]
+    cosmic-gpu-7.0: [672, 704]
+    cosmic-gpu-7.1: [320, 352]
+    cosmic-gpu-8.0: [704, 736]
+    cosmic-gpu-8.1: [288, 320]
+    cosmic-gpu-9.0: [736, 768]
+    cosmic-gpu-9.1: [256, 288]
+    cosmic-gpu-10.0: [768, 800]
+    cosmic-gpu-10.1: [224, 256]
+    cosmic-gpu-11.0: [800, 832]
+    cosmic-gpu-11.1: [192, 224]
+    cosmic-gpu-12.0: [832, 864]
+    cosmic-gpu-12.1: [160, 192]
+    cosmic-gpu-13.0: [864, 896]
+    cosmic-gpu-13.1: [128, 160]
+    cosmic-gpu-14.0: [896, 928]
+    cosmic-gpu-14.1: [96, 128]
+    cosmic-gpu-15.0: [928, 960]
+    cosmic-gpu-15.1: [64, 96]
+    cosmic-gpu-16.0: [960, 992]
+    cosmic-gpu-16.1: [32, 64]
+    cosmic-gpu-17.0: [992, 1024]
+    cosmic-gpu-17.1: [0, 32]
+
+  antenna: &default_antenna
+    number: 32
+    include: ["ea10"]
+    criterion_minimum: 14
+    duration_seconds: null
+  observation_criteria:
+    META.baseband.0: AC_8BIT
+    META.baseband.1: BD_8BIT
+    META.station.len>=: 14
+    META.intents.ScanIntent: .*OBSERVE_TARGET.*
+    META.scanid: VLASS.*
+    META.tend_unix.-now>: 30
+  record_criteria:
+    META_flagAnt.on_source.includesAntenna: *default_antenna
+    META.tend_unix.-now>: 15
+  compensations:
+    delays: full-corrected-phase
+    fiber_timestamp_shift: false
+    lo_fshift: true
+
+  hashpipe_keys:
+    PROJID: vlass_target
+  postprocess: vlass-seti
+
+  recording_mode: raw
+  repetitions: inf

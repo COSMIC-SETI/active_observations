@@ -1,0 +1,242 @@
+{
+  "cosmic-gpu-0.0": {
+    "ip": "192.168.64.100",
+    "mac": "0xb8cef6a642a1",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-0.1": {
+    "ip": "192.168.65.100",
+    "mac": "0xb8cef6a64189",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-2.0": {
+    "ip": "192.168.64.102",
+    "mac": "0xb83fd21303da",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-2.1": {
+    "ip": "192.168.65.102",
+    "mac": "0xb83fd2130716",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-3.0": {
+    "ip": "192.168.64.103",
+    "mac": "0xb83fd2130876",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-3.1": {
+    "ip": "192.168.65.103",
+    "mac": "0xb83fd2130826",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-4.0": {
+    "ip": "192.168.64.104",
+    "mac": "0xb83fd2130692",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-4.1": {
+    "ip": "192.168.65.104",
+    "mac": "0xb83fd2130bc2",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-5.0": {
+    "ip": "192.168.64.105",
+    "mac": "0xb83fd23237fe",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-5.1": {
+    "ip": "192.168.65.105",
+    "mac": "0xb83fd2130412",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-6.0": {
+    "ip": "192.168.64.106",
+    "mac": "0xb83fd2134b2a",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-6.1": {
+    "ip": "192.168.65.106",
+    "mac": "0xb83fd23237f6",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-7.0": {
+    "ip": "192.168.64.107",
+    "mac": "0xb83fd21305d6",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-7.1": {
+    "ip": "192.168.65.107",
+    "mac": "0xb83fd21303b6",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-8.0": {
+    "ip": "192.168.64.108",
+    "mac": "0xb83fd213085e",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-8.1": {
+    "ip": "192.168.65.108",
+    "mac": "0xb83fd2130d6a",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-9.0": {
+    "ip": "192.168.64.109",
+    "mac": "0xb83fd213086e",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-9.1": {
+    "ip": "192.168.65.109",
+    "mac": "0xb83fd23237fa",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-10.0": {
+    "ip": "192.168.64.110",
+    "mac": "0xb83fd213097a",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-10.1": {
+    "ip": "192.168.65.110",
+    "mac": "0xb83fd2130c8a",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-11.0": {
+    "ip": "192.168.64.111",
+    "mac": "0xb83fd2130572",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-11.1": {
+    "ip": "192.168.65.111",
+    "mac": "0xb83fd213079a",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-12.0": {
+    "ip": "192.168.64.112",
+    "mac": "0xb83fd2134a9a",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-12.1": {
+    "ip": "192.168.65.112",
+    "mac": "0xb83fd2323802",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-13.0": {
+    "ip": "192.168.64.113",
+    "mac": "0xb83fd21303d2",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-13.1": {
+    "ip": "192.168.65.113",
+    "mac": "0xb83fd213086a",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-14.0": {
+    "ip": "192.168.64.114",
+    "mac": "0xb83fd2130cca",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-14.1": {
+    "ip": "192.168.65.114",
+    "mac": "0xb83fd2130d76",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-15.0": {
+    "ip": "192.168.64.115",
+    "mac": "0xb83fd213088a",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-15.1": {
+    "ip": "192.168.65.115",
+    "mac": "0xb83fd213082e",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-16.0": {
+    "ip": "192.168.64.116",
+    "real_mac": "0xb83fd21306e",
+    "mac": "0xDEADDEADDEAD",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-16.1": {
+    "ip": "192.168.65.116",
+    "real_mac": "0xb83fd213071",
+    "mac": "0xDEADDEADDEAD",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  },
+  "cosmic-gpu-17.0": {
+    "ip": "192.168.64.117",
+    "mac": "0xb83fd213032a",
+    "port": 50000,
+    "tuning_mask": 0,
+    "feng_eth": 0
+  },
+  "cosmic-gpu-17.1": {
+    "ip": "192.168.65.117",
+    "mac": "0xb83fd21307b2",
+    "port": 50000,
+    "tuning_mask": 1,
+    "feng_eth": 1
+  }
+}
