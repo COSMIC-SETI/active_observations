@@ -55,7 +55,7 @@
     "BeamformSearchINP": "hpdaq_rawpart bfr5_generate",
     "RemovalARG": "",
     "RemovalINP": "hpdaq_rawpart",
-    "MoveARG": "/mnt/cosmic-storage-1/data2/$PROJID$/$DATASET$/$OBSID$",
+    "MoveARG": "/mnt/cosmic-storage-2/data2/$PROJID$/$DATASET$/$OBSID$",
     "MoveINP": "bfr5_generate *beamform_search"
   }
 }
