@@ -4,7 +4,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/slow/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /mnt/slow/operations/share/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-1/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq"
   },
   "analyse-collate": {
@@ -12,7 +12,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse collate_delays",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -r ea10 -o /mnt/slow/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /mnt/slow/operations/share/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -r ea10 -o /mnt/cosmic-storage-1/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq",
       "CollateDelaysARG": "-b $inst$ -r ea10 -c /mnt/slow/cosmic_delays_collation/",
       "CollateDelaysINP": "vla_analyse"
@@ -22,7 +22,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse rm",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/slow/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /mnt/slow/operations/share/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-1/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq",
       "RemovalARG": "--dir-if-empty",
       "RemovalINP": "*hpdaq"
