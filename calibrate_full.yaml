@@ -35,15 +35,18 @@ common:
 
   antenna: &default_antenna
     number: 32
-    # include: ["ea10"]
     criterion_minimum: 14
   observation_criteria:
     META.baseband.0: AC_8BIT
     META.baseband.1: BD_8BIT
     META.station.len>=: 14
     META.intents.ScanIntent: .*CALIBRATE.*
-    META.scanid: VLASS.*
-    META.tend_unix.-now>: 40
+    META.scanid.!: TCOS.*
+    META.tend_unix.-now>: 35
+    META.fcents.0.>=: 1000
+    META.fcents.0.<=: 8000
+    META.fcents.1.>=: 1000
+    META.fcents.1.<=: 8000
   record_criteria:
     META_flagAnt.on_source.includesAntenna: *default_antenna
     META.tend_unix.-now>: 10
