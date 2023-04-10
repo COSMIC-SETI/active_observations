@@ -4,7 +4,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-1/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-2/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq"
   },
   "analyse-collate": {
@@ -12,7 +12,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse collate_delays",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -r ea10 -o /mnt/cosmic-storage-1/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -r ea10 -o /mnt/cosmic-storage-2/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq",
       "CollateDelaysARG": "-b $inst$ -r ea10 -c /mnt/slow/cosmic_delays_collation/",
       "CollateDelaysINP": "vla_analyse"
@@ -22,7 +22,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse rm",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-1/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-2/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/src/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq",
       "RemovalARG": "--dir-if-empty",
       "RemovalINP": "*hpdaq"
@@ -32,9 +32,9 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "uvh5_calibrate mv",
       "UVH5CalibrateENV": "",
-      "UVH5CalibrateARG": "-o /mnt/cosmic-storage-1/data2/$PROJID$/$DATASET$/$OBSID$/calibration/ --gengain --pub-to-redis",
+      "UVH5CalibrateARG": "-o /mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$/calibration/ --gengain --pub-to-redis",
       "UVH5CalibrateINP": "*hpdaq",
-      "MoveARG": "/mnt/cosmic-storage-1/data2/$PROJID$/$DATASET$/$OBSID$",
+      "MoveARG": "/mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$",
       "MoveINP": "*hpdaq"
   },
   "skip": {"#STAGES": "skip"},
@@ -47,15 +47,15 @@
   "vlass-seti": {
     "#CONTEXT": "hpdaq_rawpart",
     "#CONTEXTENV": "POSTPROC_PROGRESS_REDIS_CHANNEL=postprocess_progress",
-    "#STAGES": "bfr5_generate beamform_search rm mv",
+    "#STAGES": "bfr5_generate beamform_search rm dbarchive",
     "BFR5GenerateARG": "--telescope-info-toml-filepath /home/cosmic/src/telinfo_vla.toml --targets-redis-key-prefix targets:VLA-COSMIC:vlass_array --take-targets 5",
     "BFR5GenerateINP": "hpdaq_rawpart",
     "BeamformSearchENV": "PATH=$PATH:/home/cosmic/src/blade/install/bin LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/cosmic/src/blade/install/lib/:/home/cosmic/src/blade/install/lib/x86_64-linux-gnu",
-    "BeamformSearchARG": "-c 131072 -C 1 -T 64 -N 1 --gpu-shares 2 --gpu-share-index $inst$ --gpu-target-most-memory --snr-threshold 8.0 --drift-rate-zero-excluded --drift-rate-maximum 50.0",
+    "BeamformSearchARG": "-c 131072 -C 1 -T 64 -N 1 --gpu-shares 2 --gpu-share-index $inst$ --gpu-target-most-memory --snr-threshold 8.0 --drift-rate-zero-excluded --drift-rate-maximum 50.0 --log-blade-output",
     "BeamformSearchINP": "hpdaq_rawpart bfr5_generate",
     "RemovalARG": "",
     "RemovalINP": "hpdaq_rawpart",
-    "MoveARG": "/mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$",
-    "MoveINP": "bfr5_generate *beamform_search"
+    "DBArchiveARG": "-c /home/cosmic/conf/cosmicdb_conf.yaml -d /mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$",
+    "DBArchiveINP": "bfr5_generate *beamform_search"
   }
 }
