@@ -211,16 +211,14 @@
   },
   "cosmic-gpu-16.0": {
     "ip": "192.168.64.116",
-    "real_mac": "0xb83fd21306e",
-    "mac": "0xDEADDEADDEAD",
+    "mac": "0xb83fd21306e2",
     "port": 50000,
     "tuning_mask": 0,
     "feng_eth": 0
   },
   "cosmic-gpu-16.1": {
     "ip": "192.168.65.116",
-    "real_mac": "0xb83fd213071",
-    "mac": "0xDEADDEADDEAD",
+    "mac": "0xb83fd213071a",
     "port": 50000,
     "tuning_mask": 1,
     "feng_eth": 1
@@ -452,16 +450,14 @@
   },
   "cosmic-gpu-16.2": {
     "ip": "192.168.64.116",
-    "real_mac": "0xb83fd21306e",
-    "mac": "0xDEADDEADDEAD",
+    "mac": "0xb83fd21306e2",
     "port": 50001,
     "tuning_mask": 0,
     "feng_eth": 0
   },
   "cosmic-gpu-16.3": {
     "ip": "192.168.65.116",
-    "real_mac": "0xb83fd213071",
-    "mac": "0xDEADDEADDEAD",
+    "mac": "0xb83fd213071a",
     "port": 50001,
     "tuning_mask": 1,
     "feng_eth": 1
