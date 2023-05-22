@@ -55,7 +55,7 @@
     "BeamformSearchINP": "hpdaq_rawpart bfr5_generate",
     "RemovalARG": "",
     "RemovalINP": "hpdaq_rawpart",
-    "DBArchiveARG": "-c /home/cosmic/conf/cosmicdb_conf.yaml -d /mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$",
+    "DBArchiveARG": "-c /home/cosmic/conf/cosmicdb_conf.yaml -d cosmic-storage-2-100g-0::data1/$PROJID$/$DATASET$/$OBSID$",
     "DBArchiveINP": "bfr5_generate *beamform_search"
   }
 }
