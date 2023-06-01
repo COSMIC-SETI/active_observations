@@ -4,7 +4,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-2/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/conf/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-2/data1/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/conf/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq"
   },
   "analyse-collate": {
@@ -12,7 +12,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse collate_delays",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -r ea10 -o /mnt/cosmic-storage-2/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/conf/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -r ea10 -o /mnt/cosmic-storage-2/data1/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/conf/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq",
       "CollateDelaysARG": "-b $inst$ -r ea10 -c /mnt/slow/cosmic_delays_collation/",
       "CollateDelaysINP": "vla_analyse"
@@ -22,7 +22,7 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "vla_analyse rm",
       "CorrelationAnalysisENV": "",
-      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-2/data0/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/conf/telinfo_vla.toml",
+      "CorrelationAnalysisARG": "-f 128 -i 1 -td -b 0.0625 -bc 0.5 -o /mnt/cosmic-storage-2/data1/vla_analysis_plots/$OBSSTEM$/$inst$/ -l /home/cosmic/conf/telinfo_vla.toml",
       "CorrelationAnalysisINP": "*hpdaq",
       "RemovalARG": "--dir-if-empty",
       "RemovalINP": "*hpdaq"
@@ -32,9 +32,9 @@
       "#WORKERGROUP": "analysis",
       "#STAGES": "uvh5_calibrate mv",
       "UVH5CalibrateENV": "",
-      "UVH5CalibrateARG": "-o /mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$/calibration/ --gengain --pub-to-redis",
+      "UVH5CalibrateARG": "-o /mnt/cosmic-storage-2/data1/$PROJID$/$DATASET$/$OBSID$/calibration/ --gengain --pub-to-redis --flagrfi",
       "UVH5CalibrateINP": "*hpdaq",
-      "MoveARG": "/mnt/cosmic-storage-2/data0/$PROJID$/$DATASET$/$OBSID$",
+      "MoveARG": "/mnt/cosmic-storage-2/data1/$PROJID$/$DATASET$/$OBSID$",
       "MoveINP": "*hpdaq"
   },
   "skip": {"#STAGES": "skip"},
@@ -55,7 +55,7 @@
     "BeamformSearchINP": "hpdaq_rawpart bfr5_generate",
     "RemovalARG": "",
     "RemovalINP": "hpdaq_rawpart",
-    "DBArchiveARG": "-c /home/cosmic/conf/cosmicdb_conf.yaml -d cosmic-storage-2-100g-0::data1/$PROJID$/$DATASET$/$OBSID$",
+    "DBArchiveARG": "-c /home/cosmic/conf/cosmicdb_conf.yaml -d /mnt/cosmic-storage-2/data1/$PROJID$/$DATASET$/$OBSID$",
     "DBArchiveINP": "bfr5_generate *beamform_search"
   }
 }
