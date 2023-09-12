@@ -1,0 +1,11 @@
+# users
+ross_donnachie: &ross_donnachie
+  U01D8PSR84D
+talon_myburgh:
+  U01DJ1R98AG
+paul_demorest:
+  U017YG34THR
+# channels
+# titled positions/groups
+observation_control_developers:
+  - *ross_donnachie
