@@ -210,14 +210,14 @@ cosmic-gpu-15.1:
 
 cosmic-gpu-16.0:
   ip: "192.168.64.116"
-  mac: "0xb83fd21306e2"
+  mac: "0xb83fd213071a"
   port: 50000
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-16.1:
   ip: "192.168.65.116"
-  mac: "0xb83fd213071a"
+  mac: "0xb83fd21306e2"
   port: 50000
   tuning_mask: 1
   feng_eth: 1
@@ -308,14 +308,14 @@ cosmic-gpu-22.1:
 
 cosmic-gpu-23.0:
   ip: "192.168.64.123"
-  mac: "0xb83fd2130d6e"
+  mac: "0xb83fd2130cea"
   port: 50000
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-23.1:
   ip: "192.168.65.123"
-  mac: "0xb83fd2130cea"
+  mac: "0xb83fd2130d6e"
   port: 50000
   tuning_mask: 1
   feng_eth: 1

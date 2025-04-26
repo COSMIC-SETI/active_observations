@@ -1,0 +1,22 @@
+cosmic-gpu-2: true
+cosmic-gpu-3: true
+cosmic-gpu-4: true
+cosmic-gpu-5: true
+cosmic-gpu-6: true
+cosmic-gpu-7: true
+cosmic-gpu-8: true
+cosmic-gpu-9: true
+cosmic-gpu-10: false # cannot access storage-1
+cosmic-gpu-11: true
+cosmic-gpu-12: true
+cosmic-gpu-13: true
+cosmic-gpu-14: true
+cosmic-gpu-15: true
+cosmic-gpu-16: true
+cosmic-gpu-17: true
+cosmic-gpu-18: true
+cosmic-gpu-19: true
+cosmic-gpu-20: false # cannot access storage-1
+cosmic-gpu-21: true
+cosmic-gpu-22: true
+cosmic-gpu-23: true
