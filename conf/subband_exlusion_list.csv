@@ -1,0 +1,62 @@
+Frequency (MHz),Description,Origin,Classification,Spectrum
+1000.0,RATSCAT Low FQ,NM, WSMR,Intermittent,plot
+1030,Aeronautical IFF, gnd2air,OHD, Everywhere,Intermittent,plot
+1025-1150,Aircraft navigation DME,DME/VOR sites,intermittent,plot
+1090,Aeronautical IFF, air2gnd,OHD, Everywhere,Intermittent,plot
+1166-1186,GPS,Galileo,GLONASS L5,OHD, MEO,Continuous,plot
+1200,VLA modem,VLA Site,Continuous,plot
+1222.5-1223.5,TARS Pulsed radar,AZ, Ft Huachuca,,Pulsed & intermittent,
+1217-1237,GPS L2,OHD, MEO,Continuous,plot
+1231,AEROSTAT,TX, FT Bliss,Malfunction,plot
+1233.71,FAA ARSR4 radar,,Continuous,plot
+1235,AEROSTAT,,Malfunction,plot
+1243-1251,GLONASS L2,OHD, MEO,Continuous,plot
+1251.5-1252.5,TARS pulsed radar,NM, Deming,Pulsed & Intermittant,plot
+1254.42,FAA ARSR4 radar,NM, Deming,Continuous,plot
+1262.19,FAA ARSR4 radar,NM, Eagle Peak,Continuous,plot
+1268,COMPASS E6,,,plot
+1282.5-1283.5,TARS pulsed radar,AZ, Ft Huachuca,Pulsed & Intermittant,
+1291,AEROSTAT,TX, FT Bliss,Malfunction,plot
+1295,AEROSTAT,TX, FT Bliss,Malfunction,plot
+1310,FAA ASR radar,NM, Albuquerque,Continuous,plot
+1311.5-1312.5,TARS pulsed radar,NM, Deming,Pulsed & Intermittant,plot
+1317,FAA ARSR4 radar,,Continuous,plot
+1330,FAA ASR radar,NM, Albuquerque,,plot
+1337.28,FAA ARSR4 radar,NM, Deming,Continuous,plot
+1345.04,FAA ARSR4 radar,NM, Eagle Peakk,Continuous,plot
+1357,WSMR RAJPO transponder,NM, WSMR,Intermittent,plot
+1365,WSMR RAJPO transponder,NM, WSMR,Intermittent,plot
+1369,WSMR RAJPO transponder,NM, WSMR,Intermittent,plot
+1376-1386,GPS L3 NUDET,OHD,Intermittent,plot
+1385,WSMR RAJPO transponder,NM, WSMR,Intermittent,plot
+1393,WSMR RAJPO transponder,NM, WSMR,Intermittent,plot
+1400,internal birdie,ea13,continuous,
+1408,internal birdie,numerous antennas,continuous,
+1432.5,WSMR RAJPO transponder,NM, WSMR,Intermittent,plot
+1437-1453,WSMR telemetry,NM, WSMR,Intermittent,plot
+1444.5,High alt balloon,NM, FT Sumner,Intermittent,plot
+1448.5,Test telemetry,NM, FT Bliss,Intermittent,plot
+1452.5,Test telemetry,NM, FT Bliss,Intermittent,plot
+1453.5,High alt baloon,NM, FT Sumner,Intermittent,plot
+1460.5,Test telemetry,NM, FT Bliss,Intermittent,plot
+1501.5,High alt baloon,NM, FT Sumner,Intermittent,plot
+1504.5,WSMR jamming telemetry,NM, WSMR,Intermittent,plot
+1515.5,High alt baloon,NM, FT Sumner,Intermittent,plot
+1525-1564,INMARSAT satellites,,,plot
+1525.5,High alt baloon,NM, FT Sumner,Intermittent,plot
+1529.5,Test telemetry,NM, FT Bliss,Intermittent,plot
+1530.5,WSMR jamming telemetry,NM, WSMR,Intermittent,plot
+1565.42,GPS L1 jamming,NM, WSMR,Continuous,plot
+1564-1586,GPS L1,OHD,Continuous,plot
+1585.42,GPS L1 jamming,NM, WSMR,Continuous,plot
+1606.0,GLONASS L1,OHD,Continuous,plot
+1616.0,GLONASS L1,OHD,Continuous,plot
+1618-1627,IRIDIUM satellites,OHD,Continuous,plot
+1642,2nd harmonic VLA radios,,Sporadic,plot
+1668-1680,RADIOSONDES- WX baloons,,Intermittent,plot
+1683-1687,GOES weather satellite,,,plot
+1689-1693,GOES weather satellite,,,plot
+1700-1702,NOAA weather satellite,,,plot
+1705-1709,NOAA weather satellite,,,plot
+1771.0,High alt baloon,NM, FT Sumner,Intermittent,plot
+1850-1990,PCS cell phone base stations,Everywhere,Continuous,plot

@@ -1,10 +1,12 @@
 # users
 ross_donnachie: &ross_donnachie
-  U01D8PSR84D
+  D03P8B97F8B
 talon_myburgh:
   U01DJ1R98AG
 paul_demorest:
   U017YG34THR
+chenoa_tremblay:
+  D03FUFL146S
 # channels
 # titled positions/groups
 observation_control_developers:

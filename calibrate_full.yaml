@@ -1,14 +1,79 @@
-foundation_relpath: ./foundational_yamls/standard_commensal.yaml
 common:
+  xengine_dynamic_spec:
+    tuning_inclusions: ["AC", "BD"]
+    xengine_port: 50001 # target the calibration instances
+    subband_grade_threshold: 0.0
+  # xengine_subband_map:
+  #   cosmic-gpu-2.2: [320, 352]
+  #   cosmic-gpu-3.2: [352, 384]
+  #   cosmic-gpu-4.2: [384, 416]
+  #   cosmic-gpu-5.2: [416, 448]
+  #   cosmic-gpu-6.2: [448, 480]
+  #   cosmic-gpu-7.2: [480, 512]
+  #   cosmic-gpu-8.2: [512, 544]
+  #   cosmic-gpu-9.2: [544, 576]
+  #   cosmic-gpu-10.2: [576, 608]
+  #   cosmic-gpu-11.2: [608, 640]
+  #   cosmic-gpu-12.2: [640, 672]
+  #   cosmic-gpu-13.2: [672, 704]
+  #   cosmic-gpu-14.2: [704, 736]
+  #   cosmic-gpu-15.2: [736, 768]
+  #   cosmic-gpu-16.2: [768, 800]
+  #   cosmic-gpu-17.2: [800, 832]
+  #   cosmic-gpu-18.2: [832, 864]
+  #   cosmic-gpu-19.2: [864, 896]
+  #   cosmic-gpu-20.2: [896, 928]
+  #   cosmic-gpu-21.2: [928, 960]
+  #   cosmic-gpu-22.2: [960, 992]
+  #   cosmic-gpu-23.2: [992, 1024]
+
+  #   cosmic-gpu-2.3: [704, 736]
+  #   cosmic-gpu-3.3: [672, 704]
+  #   cosmic-gpu-4.3: [640, 672]
+  #   cosmic-gpu-5.3: [608, 640]
+  #   cosmic-gpu-6.3: [576, 608]
+  #   cosmic-gpu-7.3: [544, 576]
+  #   cosmic-gpu-8.3: [480, 512]
+  #   cosmic-gpu-9.3: [448, 480]
+  #   cosmic-gpu-10.3: [416, 448]
+  #   cosmic-gpu-11.3: [384, 416]
+  #   cosmic-gpu-12.3: [352, 384]
+  #   cosmic-gpu-13.3: [320, 352]
+  #   cosmic-gpu-14.3: [288, 320]
+  #   cosmic-gpu-15.3: [256, 288]
+  #   cosmic-gpu-16.3: [224, 256]
+  #   cosmic-gpu-17.3: [192, 224]
+  #   cosmic-gpu-18.3: [160, 192]
+  #   cosmic-gpu-19.3: [128, 160]
+  #   cosmic-gpu-20.3: [96, 128]
+  #   cosmic-gpu-21.3: [64, 96]
+  #   cosmic-gpu-22.3: [32, 64]
+  #   cosmic-gpu-23.3: [0, 32]
+  antenna: &default_antenna
+    number: 32
+    criterion_minimum: 17
   observation_criteria:
+    META.baseband.0: AC_8BIT
+    META.baseband.1: BD_8BIT
+    META.station.len>=: 17
+
+    META.fcents.0.>=: 2000
+    #META.fcents.0.<=: 8000
+    META.fcents.1.>=: 2000
+    #META.fcents.1.<=: 8000
     META.intents.ScanIntent: .*CALIBRATE_(BANDPASS|DELAY|PHASE|FLUX).*
     META.scanid.!: .*(TCOS|sysstart|stress).*
     # at worst give 35 seconds for configuration
-    META.tend_unix.-now>: 60
+    META.tend_unix.-now>: 35
   record_criteria:
     META.intents.ScanIntent: .*CALIBRATE_(BANDPASS|DELAY|PHASE|FLUX).*
-    META.tend_unix.-now>: 10
+    META_flagAnt.on_source.includesAntenna: *default_antenna
+    META.tend_unix.-now>: 5
   recording_mode: correlator
+  compensations:
+    delays: full-corrected-phase
+    fiber_timestamp_shift: false
+    lo_fshift: true
   hashpipe_keys:
     PROJID: uvh5_calibration
     XTIMEINT: 1

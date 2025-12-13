@@ -1,14 +1,14 @@
 cosmic-gpu-0.0:
   ip: "192.168.64.100"
   mac: "0xb8cef6a642a1"
-  port: 50000
+  port: 49999
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-0.1:
   ip: "192.168.65.100"
   mac: "0xb8cef6a64189"
-  port: 50000
+  port: 49999
   tuning_mask: 1
   feng_eth: 0
 
@@ -28,14 +28,14 @@ cosmic-gpu-2.1:
 
 cosmic-gpu-3.0:
   ip: "192.168.64.103"
-  mac: "0xb83fd2130876"
+  mac: "0xb83fd2130572"
   port: 50000
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-3.1:
   ip: "192.168.65.103"
-  mac: "0xb83fd2130826"
+  mac: "0xb83fd213079a"
   port: 50000
   tuning_mask: 1
   feng_eth: 1
@@ -140,14 +140,14 @@ cosmic-gpu-10.1:
 
 cosmic-gpu-11.0:
   ip: "192.168.64.111"
-  mac: "0xb83fd2130572"
+  mac: "0x88e9a49cff72"
   port: 50000
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-11.1:
   ip: "192.168.65.111"
-  mac: "0xb83fd213079a"
+  mac: "0x88e9a4d52138"
   port: 50000
   tuning_mask: 1
   feng_eth: 1
@@ -217,7 +217,7 @@ cosmic-gpu-16.0:
 
 cosmic-gpu-16.1:
   ip: "192.168.65.116"
-  mac: "0xb83fd21306e2"
+  mac: "0xb83fd2130d6e"
   port: 50000
   tuning_mask: 1
   feng_eth: 1
@@ -315,7 +315,7 @@ cosmic-gpu-23.0:
 
 cosmic-gpu-23.1:
   ip: "192.168.65.123"
-  mac: "0xb83fd2130d6e"
+  mac: "0xb83fd21306e2"
   port: 50000
   tuning_mask: 1
   feng_eth: 1
@@ -324,14 +324,14 @@ cosmic-gpu-23.1:
 cosmic-gpu-0.2:
   ip: "192.168.64.100"
   mac: "0xb8cef6a642a1"
-  port: 50001
+  port: 49998
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-0.3:
   ip: "192.168.65.100"
   mac: "0xb8cef6a64189"
-  port: 50001
+  port: 49998
   tuning_mask: 1
   feng_eth: 0
 
@@ -351,14 +351,14 @@ cosmic-gpu-2.3:
 
 cosmic-gpu-3.2:
   ip: "192.168.64.103"
-  mac: "0xb83fd2130876"
+  mac: "0xb83fd2130572"
   port: 50001
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-3.3:
   ip: "192.168.65.103"
-  mac: "0xb83fd2130826"
+  mac: "0xb83fd213079a"
   port: 50001
   tuning_mask: 1
   feng_eth: 1
@@ -463,14 +463,14 @@ cosmic-gpu-10.3:
 
 cosmic-gpu-11.2:
   ip: "192.168.64.111"
-  mac: "0xb83fd2130572"
+  mac: "0x88e9a49cff72"
   port: 50001
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-11.3:
   ip: "192.168.65.111"
-  mac: "0xb83fd213079a"
+  mac: "0x88e9a4d52138"
   port: 50001
   tuning_mask: 1
   feng_eth: 1
@@ -533,14 +533,14 @@ cosmic-gpu-15.3:
 
 cosmic-gpu-16.2:
   ip: "192.168.64.116"
-  mac: "0xb83fd21306e2"
+  mac: "0xb83fd213071a"
   port: 50001
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-16.3:
   ip: "192.168.65.116"
-  mac: "0xb83fd213071a"
+  mac: "0xb83fd2130d6e"
   port: 50001
   tuning_mask: 1
   feng_eth: 1
@@ -631,14 +631,14 @@ cosmic-gpu-22.3:
 
 cosmic-gpu-23.2:
   ip: "192.168.64.123"
-  mac: "0xb83fd2130d6e"
+  mac: "0xb83fd2130cea"
   port: 50001
   tuning_mask: 0
   feng_eth: 0
 
 cosmic-gpu-23.3:
   ip: "192.168.65.123"
-  mac: "0xb83fd2130cea"
+  mac: "0xb83fd21306e2"
   port: 50001
   tuning_mask: 1
   feng_eth: 1

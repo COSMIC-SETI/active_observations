@@ -1,22 +1,92 @@
-cosmic-gpu-2: true
-cosmic-gpu-3: true
-cosmic-gpu-4: true
-cosmic-gpu-5: true
-cosmic-gpu-6: true
-cosmic-gpu-7: true
-cosmic-gpu-8: true
-cosmic-gpu-9: true
-cosmic-gpu-10: false # cannot access storage-1
-cosmic-gpu-11: true
-cosmic-gpu-12: true
-cosmic-gpu-13: true
-cosmic-gpu-14: true
-cosmic-gpu-15: true
-cosmic-gpu-16: true
-cosmic-gpu-17: true
-cosmic-gpu-18: true
-cosmic-gpu-19: true
-cosmic-gpu-20: false # cannot access storage-1
-cosmic-gpu-21: true
-cosmic-gpu-22: true
-cosmic-gpu-23: true
+cosmic-gpu-0.0: false # dev node but in the xengine_hosts.yaml...
+cosmic-gpu-0.1: false # dev node but in the xengine_hosts.yaml...
+cosmic-gpu-0.2: false # dev node but in the xengine_hosts.yaml...
+cosmic-gpu-0.3: false # dev node but in the xengine_hosts.yaml...
+cosmic-gpu-2.0: true
+cosmic-gpu-2.1: true
+cosmic-gpu-2.2: true
+cosmic-gpu-2.3: true
+cosmic-gpu-3.0: false # crowded buffer, check manually
+cosmic-gpu-3.1: true
+cosmic-gpu-3.2: true
+cosmic-gpu-3.3: true
+cosmic-gpu-4.0: true
+cosmic-gpu-4.1: true
+cosmic-gpu-4.2: true
+cosmic-gpu-4.3: true
+cosmic-gpu-5.0: true
+cosmic-gpu-5.1: true
+cosmic-gpu-5.2: true
+cosmic-gpu-5.3: true
+cosmic-gpu-6.0: true
+cosmic-gpu-6.1: true
+cosmic-gpu-6.2: true
+cosmic-gpu-6.3: true
+cosmic-gpu-7.0: true
+cosmic-gpu-7.1: true
+cosmic-gpu-7.2: true
+cosmic-gpu-7.3: true
+cosmic-gpu-8.0: true
+cosmic-gpu-8.1: true
+cosmic-gpu-8.2: true
+cosmic-gpu-8.3: true
+cosmic-gpu-9.0: true
+cosmic-gpu-9.1: true
+cosmic-gpu-9.2: true
+cosmic-gpu-9.3: true
+cosmic-gpu-10.0: false # no packets received
+cosmic-gpu-10.1: true
+cosmic-gpu-10.2: false # no packets received
+cosmic-gpu-10.3: true
+cosmic-gpu-11.0: true
+cosmic-gpu-11.1: true
+cosmic-gpu-11.2: true
+cosmic-gpu-11.3: true
+cosmic-gpu-12.0: true
+cosmic-gpu-12.1: true
+cosmic-gpu-12.2: true
+cosmic-gpu-12.3: true
+cosmic-gpu-13.0: true
+cosmic-gpu-13.1: true
+cosmic-gpu-13.2: true
+cosmic-gpu-13.3: true
+cosmic-gpu-14.0: true
+cosmic-gpu-14.1: true
+cosmic-gpu-14.2: true
+cosmic-gpu-14.3: true
+cosmic-gpu-15.0: true
+cosmic-gpu-15.1: true
+cosmic-gpu-15.2: true
+cosmic-gpu-15.3: true
+cosmic-gpu-16.0: true
+cosmic-gpu-16.1: true
+cosmic-gpu-16.2: true
+cosmic-gpu-16.3: true
+cosmic-gpu-17.0: true
+cosmic-gpu-17.1: true
+cosmic-gpu-17.2: true
+cosmic-gpu-17.3: true
+cosmic-gpu-18.0: true
+cosmic-gpu-18.1: true
+cosmic-gpu-18.2: true
+cosmic-gpu-18.3: true
+cosmic-gpu-19.0: true
+cosmic-gpu-19.1: true
+cosmic-gpu-19.2: true
+cosmic-gpu-19.3: true
+cosmic-gpu-20.0: false # not participating in calibration well
+cosmic-gpu-20.1: false # not participating in calibration well
+cosmic-gpu-20.2: true
+cosmic-gpu-20.3: true
+cosmic-gpu-21.0: true
+cosmic-gpu-21.1: true
+cosmic-gpu-21.2: true
+cosmic-gpu-21.3: true
+cosmic-gpu-22.0: true
+cosmic-gpu-22.1: true
+cosmic-gpu-22.2: true
+cosmic-gpu-22.3: true
+cosmic-gpu-23.0: false # needs calibration
+cosmic-gpu-23.1: false # needs calibration
+cosmic-gpu-23.2: true
+cosmic-gpu-23.3: true

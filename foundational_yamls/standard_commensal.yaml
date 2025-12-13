@@ -52,14 +52,11 @@ observation_criteria:
   META.baseband.0: AC_8BIT
   META.baseband.1: BD_8BIT
   META.station.len>=: 14
-  META.intents.ScanIntent: .*OBSERVE_TARGET.*
-  META.scanid.!: (VLASS|TCOS|sysstart|stress|TEST|TSKY0001|24A-473).*
   META.tend_unix.-now>: 35
   META.fcents.0.>=: 2000
   #META.fcents.0.<=: 8000
   META.fcents.1.>=: 2000
   #META.fcents.1.<=: 8000
-  CAL_log.Timestamp.-now>: -10800 #within 3h
 record_criteria:
   META_flagAnt.on_source.includesAntenna: *default_antenna
   META.tend_unix.-now>: 15
